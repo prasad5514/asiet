@@ -10,8 +10,8 @@ while(x>0)
 }
 if(rev==y)
 {
-    console.log("pallidrom")
+    console.log("palindrome")
 }
 else{
-    console.log("not pallidrom")
+    console.log("not palindrome")
 }
