@@ -16,5 +16,5 @@ else{
     console.log("not palindrome")
 }
 }
-var y=123;
+var y=121;
 pal(y);
