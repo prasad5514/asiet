@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReverseUI</title>
+    <h1><center>To get reverse of a number</center></h1>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <table class="table table-borderless">
+                <tr>
+                    <td class="font-weight-bolder">Enter number</td>
+                    <td><input type="text" name="" id="num" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="button" class="btn btn-danger" onclick="reverse()">Find reverse</button> </td>
+                   
+               <tr>
+                   <td></td>
+                   <td><p id="result"></p></td>
+               </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function reverse()
+        {       
+                var x=parseInt(document.getElementById("num").value);
+                var rev=0;
+                var rem=0;
+                while(x>0)
+            {
+                rem=x%10;
+                rev=rev*10+rem;
+                x=parseInt(x/10);
+            }
+            //console.log(rev)
+            document.getElementById("result").innerHTML=rev+" is the reverse";
+
+        }
+    </script>
+    
+</body>
+</html>

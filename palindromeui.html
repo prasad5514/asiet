@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PalindromeUI</title>
+    <h1><center>Palindrome</center></h1>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <table class="table table-borderless">
+                <tr>
+                    <td class="font-weight-bolder">Enter number</td>
+                    <td><input type="text" name="" id="num" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="button" class="btn btn-success" onclick="palindrome()">check palindrome</button> </td>
+                   
+               <tr>
+                   <td></td>
+                   <td><p id="result"></p></td>
+               </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function palindrome()
+        {       
+                var x=parseInt(document.getElementById("num").value);
+                var temp=x;
+                var rev=0;
+                var rem=0;
+                while(x>0)
+            {
+                rem=x%10;
+                rev=rev*10+rem;
+                x=parseInt(x/10);
+            }
+            if(temp==rev)
+            {
+                document.getElementById("result").innerHTML=temp+" palindrome";
+            }
+            else
+            {
+                document.getElementById("result").innerHTML=temp+" not palindrome";
+            }
+        }
+    </script>
+    
+</body>
+</html>
