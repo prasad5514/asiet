@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="con">
+        <form>
+            <table class="table table-borderless">
+                <tr>
+                    <td class="font-weight-bolder">Enter name</td>
+                    <td><input type="text" name="" id="name" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bolder">enter address</td>
+                    <td><input type="text" name="" id="address" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bolder">Enter email id</td>
+                    <td><input type="email" name="" id="email" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bolder">Enter DOB</td>
+                    <td><input type="date" name="" id="dob" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bolder">Enter username</td>
+                    <td><input type="text" name="" id="user" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bolder">Enter password</td>
+                    <td><input type="password" name="" id="pass1" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bolder">Confirm password</td>
+                    <td><input type="password" name="" id="pass2" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" class="btn btn-danger" onclick="passwordd()" value="submit"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><p id="result"></p></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function passwordd()
+        {
+            var nam=document.getElementById("name").value;
+            var add=document.getElementById("address").value;
+            var ema=document.getElementById("email").value;
+            var dob=document.getElementById("dob").value;
+            var use=document.getElementById("user").value;
+            var a=document.getElementById("pass1").value;
+            var b=document.getElementById("pass2").value;
+            if(a==b)
+            {
+                document.getElementById("result").innerHTML="saved";
+            }
+            else
+            {
+                document.getElementById("result").innerHTML="different password";
+            }
+
+        }
+
+    </script>
+</body>
+</html>
