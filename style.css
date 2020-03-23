@@ -1,0 +1,19 @@
+.myMargin{
+    margin: 5px;
+}
+.myMargin2{
+    margin: 7px;
+}
+.fa{
+    font-size: 75px;
+    color: rgb(230, 230, 30);
+    }
+.bgg{
+    background-color: brown;
+}
+body{
+    background-color: rgb(209, 227, 235);
+}
+.myMargin  button{
+    color: white;
+}
