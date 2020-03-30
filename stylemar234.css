@@ -1,0 +1,16 @@
+body{
+    background-color: red;
+}
+p{
+    border: 15px solid green;
+    margin: 150px;
+    padding: 150px;
+    color: violet;
+}
+.class1{
+    background-color: yellow;
+    border:20px solid green;
+}
+#id1{
+    color: blue;
+}
