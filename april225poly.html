@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>polymophism</h1>
+    <script>
+        const animal =function(sound){        //var/cost/let
+            this.sound=sound;
+        }
+        animal.prototype.makesound=function(){
+            console.log(this.sound);
+        }
+        var dog=function(name,breed){
+            this.name=name;
+            this.breed=breed;
+        }
+        dog.prototype=new animal("bow bow");
+
+        var cat=function(name,breed){
+            this.name=name;
+            this.breed=breed;
+        }
+         cat.prototype=new animal("meow meow");
+
+         var dog1=new dog("jackey","pug");
+         var cat1=new cat("kurinji","persian");
+         dog1.makesound();
+         cat1.makesound();
+</script>
+</body>
+</html>

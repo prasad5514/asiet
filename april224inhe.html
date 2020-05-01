@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>prototypal inheritance</h1>
+    <p></p>
+    <script>
+        function student (namee,rollnoo){
+            this.name=namee;
+            this.rollno=rollnoo;
+        }
+        student.prototype.class="IX B";
+        function alumini(){
+            this.batch=2020;
+        }
+        alumini.prototype=new student("yash",12);
+        var std1=new alumini();
+        console.log(std1.name);
+        console.log(std1.class);
+        console.log(std1.batch);
+    </script>
+</body>
+</html>

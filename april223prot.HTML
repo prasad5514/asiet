@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>prototypes</h1>
+    <p>The prototype object is special type of enumerable object to which
+         additional properties can be attached to it which will be
+          across all the instances of its constucter function" type=</p>
+</body>
+<script>
+    function student (name,rollno){//constructer function
+        this.Name=name;
+        this.Rollno=rollno;
+    }
+    var std1=new student("hari",25);
+    console.log(std1);
+    student.prototype.class="IX B";
+    var std2=new student("abdul",22);
+    console.log(std1);
+    console.log(std2);//alert(std1.class); in console
+</script>
+</html>

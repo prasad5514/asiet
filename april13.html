@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: aqua;
+            text-align: left: ;
+        
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="cycle.jpeg">cycle veno</a>
+        <form>
+            <label for="name">enter student name</label><br>
+            <input type="text" name="" id="name"><br>
+            <label for="">enter class</label><br>
+            <input type="text" name="" id="class"><br>
+            <label for="">enter roll number</label><br>
+            <input type="text" name="" id="rollno"><br>
+            <label for="">mark obtained in subject 1</label><br>
+            <input type="number" name="" id="mark1">/100<br>
+            <label for="">mark obtained in subject 2</label><br>
+            <input type="number" name="" id="mark2">/100<br>
+            <label for="">mark obtained in subject 3</label><br>
+            <input type="number" name="" id="mark3">100<br>
+            <p>click the button below to create percentage card</p><br>
+            <button type="button" class="btn btn-danger" onclick="permark()">generate card</button><br>
+            <label for="percentage">total percentage is</label>
+            <label id="result"></label>
+        </form>
+    <script>
+        function permark()
+        {
+             var sub1=parseInt(document.getElementById("mark1").value);
+             var sub2=parseInt(document.getElementById("mark2").value);
+             var sub3=parseInt(document.getElementById("mark3").value);
+             var subtotal=parseInt(((sub1+sub2+sub3)/3));
+             document.getElementById("result").innerHTML=subtotal+" %";
+
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>How to create objects ? </h1>
+    <p>Javascript object is a collection of named values</p>
+    <h4> objects can created by three methods</h4>
+    <ol>
+        <li> using obect literals </li>
+        <li>with the keyword new</li>
+        <li> using a constructor</li>
+    </ol>
+</body>
+<script>
+    var student = {          //student is the name of the object,
+        name:"john",         //name,class is name of proerty,function=methods           
+        class:"X1 B",        //findsum is property of object student
+        mark1:35,
+        mark2:45,
+        mark3:40,
+        findsum:function(){
+            return(this.mark1+this.mark2+this.mark3)
+        },
+        findavg:function(){
+            var sum=this.findsum();
+            return(sum/3);  
+        },
+        printer:function(){
+            var avg=this.findavg();
+            console.log(`The student named ${this.name} of class ${this.class} has average of ${avg}`);
+        }
+        //student.printer(); it won't work beacause calling will happen if it out side
+    }
+    //console.log(student.name)
+    student.printer();
+    console.log(student);
+
+</script>
+</html>  

@@ -1,0 +1,8 @@
+{
+    "name":"prasad",
+    "age":27,
+    "address":{
+        "street":"whitefield",
+        "city":"trivandrum"},
+    "friend":["gokul","diyab"]
+}

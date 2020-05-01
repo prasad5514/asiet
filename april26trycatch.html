@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id="enter" type="text">
+    <button id="press" onclick="myfunc()">click</button>
+</body>
+<script>
+    var enter=document.getElementById("enter"); 
+function myfunc(){
+    var a=1;
+    
+    try{
+        adlert("value of a is "+a);
+        //console.log("hello prasad");
+       }
+    catch(er){
+        console.log("error is :"+er);//er or er.description
+
+    }
+}
+</script>
+</html>

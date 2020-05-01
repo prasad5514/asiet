@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>april19</title>
+</head>
+<body>
+   <form action="first.html" onsubmit="chkpwd">
+        <h3>login form</h3>
+        
+        <label for="password">password</label><br>
+        <input type="password" id="pwd" size="8" max="8"><br>
+        <label for="error" id="error"></label><br>
+        <button id="submit">login</button>
+        
+    </form>
+    <script>
+         var pwd=document.getElementById("pwd");
+         chkpwd=function validate()
+        {
+        if(pwd.value.trim()=="")
+        {
+            document.getElementById("error").innerHTML="weak password";
+            return false;
+        }
+        else if(pwd.search(/[0-9]/)==-1)
+        {
+            document.getElementById("error").innerHTML="digits must be there";
+            return false;
+        }
+        else if(pwd.search(/[a-z]/)==-1)
+        {
+            document.getElementById("error").innerHTML="small letter must be there";
+            return false;
+        }
+        else if(pwd.search(/[A-Z]/)==-1)
+        {
+            document.getElementById("error").innerHTML="capital letter must be there";
+            return false;
+        }
+        else
+        {
+        document.getElementById(error).innerHTML= "strong successful";
+            return false;{
+        }
+    </script>
+    
+</body>
+</html>

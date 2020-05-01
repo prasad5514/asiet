@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>getters and setters</h1>
+    <p>getters and setters are function that can be used 
+        to access the object properties and can be accessed as a properties(not as function</p>
+</body>
+<script>
+    var student ={
+        firstname:"manu",
+        lastname:"raghav",
+        class:"clas",
+        get fullname(){
+            return `${this.firstname} ${this.lastname}`;
+        },
+        set addclass (clas){
+            this.class=clas;
+        },
+    }
+    console.log(student);
+    console.log(student.fullname);
+    student.addclass="IX B";
+    console.log(student.class);
+</script>
+</html>

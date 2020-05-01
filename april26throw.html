@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>enter a number between 5 to 10</p>
+    <input type="text" id="enter" >
+    <button id="press" onclick="validate()">verify</button>
+    <p id="num"></p>
+    <script>
+        var enter=document.getElementById("enter");
+        var press=document.getElementById("press");
+        var num=document.getElementById("num");
+        function validate(){
+            let x=enter.value;
+            //num.innerHTML="";//to make p tag empty en case of "5"
+            try{
+                if(x=="") throw "field is empty";
+                if(isNaN(x)) throw "not a number";
+                if(x<5) throw "low value";
+                if(x>=10) throw "high value";
+               }
+               catch(errore){
+                num.innerHTML="error :: "+errore;
+                }
+                finally{
+                    enter.value="";
+                }
+            }
+    </script>
+</body>
+</html>

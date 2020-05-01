@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom events</title>
+    <link rel="stylesheet" href="april10.css">
+</head>
+<body>
+    <h1>welcome to dom events</h1>
+    <div id="custometext">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsam recusandae aliquam impedit! Provident, tempora. Corporis laborum, culpa distinctio consequatur ipsum quo temporibus, nihil harum voluptatum doloremque sed, nam voluptates.</p>
+    </div>
+    <div id="divitem">
+        <img id="imageitem" onmouseover="changerimage();" onmouseout="resetimage();" src="ala1.jpg" alt="" height="250px" width="190px">
+    </div>
+    <button onclick="changer();">change image</button>
+    <button onclick="hide();">disappear</button>
+    <button ondblclick="reset();">reset all</button>
+    <script src="april10.js"></script>
+</body>
+</html>
